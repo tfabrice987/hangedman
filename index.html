@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>The HangMan</title>
+</head>
+<body>
+    <h1>The Hanged 'man'</h1>
+
+    <div class="hang-man-box">
+        <img src="img/head.png" class="head">
+        <img src="img/body.png" class="body">
+        <img src="img/rope.png" class="rope">
+        <img src="img/main-wood.png" class="main-wood">
+        <img src="img/panel-wood.png" class="panel-wood">
+        <img src="img/top-wood.png" class="top-wood">
+        <img src="img/trans-wood.png" class="trans-wood">
+        <img src="img/grave.png" class="grave-1">
+        <img src="img/grave.png" class="grave-2">
+        <img src="img/rat.svg" class="rat">
+        <img src="img/tree.png" class="tree-1">
+        <img src="img/tree.png" class="tree-2">
+        <div class="bird-container bird-container--one">
+            <div class="bird bird--one"></div>
+        </div>
+        <div class="bird-container bird-container--two">
+            <div class="bird bird--two"></div>
+        </div>
+        <div class="bird-container bird-container--three">
+            <div class="bird bird--three"></div>
+        </div>
+        <div class="bird-container bird-container--four">
+            <div class="bird bird--four"></div>
+        </div>
+    </div>
+
+    <div class="message-box">
+        <p class="win-message">Bravo, un homme à survécu grace à vous aujourd'hui</p>
+    </div>
+
+    <div id="word" class="word-box">
+        <!-- INSERT WORD HERE -->
+    </div>
+    <div class="keyboard">
+        <div class="line">
+            <div id="a" class="letter" onclick="checkValue('a')">a</div>
+            <div id="z" class="letter" onclick="checkValue('z')">z</div>
+            <div id="e" class="letter" onclick="checkValue('e')">e</div>
+            <div id="r" class="letter" onclick="checkValue('r')">r</div>
+            <div id="t" class="letter" onclick="checkValue('t')">t</div>
+            <div id="y" class="letter" onclick="checkValue('y')">y</div>
+            <div id="u" class="letter" onclick="checkValue('u')">u</div>
+            <div id="i" class="letter" onclick="checkValue('i')">i</div>
+            <div id="o" class="letter" onclick="checkValue('o')">o</div>
+            <div id="p" class="letter" onclick="checkValue('p')">p</div>
+        </div>
+        <div class="line">
+            <div id="q" class="letter" onclick="checkValue('q')">q</div>
+            <div id="s" class="letter" onclick="checkValue('s')">s</div>
+            <div id="d" class="letter" onclick="checkValue('d')">d</div>
+            <div id="f" class="letter" onclick="checkValue('f')">f</div>
+            <div id="g" class="letter" onclick="checkValue('g')">g</div>
+            <div id="h" class="letter" onclick="checkValue('h')">h</div>
+            <div id="j" class="letter" onclick="checkValue('j')">j</div>
+            <div id="k" class="letter" onclick="checkValue('k')">k</div>
+            <div id="l" class="letter" onclick="checkValue('l')">l</div>
+            <div id="m" class="letter" onclick="checkValue('m')">m</div>
+        </div>
+        <div class="line">
+            <div id="w" class="letter" onclick="checkValue('w')">w</div>
+            <div id="x" class="letter" onclick="checkValue('x')">x</div>
+            <div id="c" class="letter" onclick="checkValue('c')">c</div>
+            <div id="v" class="letter" onclick="checkValue('v')">v</div>
+            <div id="b" class="letter" onclick="checkValue('b')">b</div>
+            <div id="n" class="letter" onclick="checkValue('n')">n</div>
+        </div>
+    </div>
+    <div class="btn-box">
+        <button class="reset" onclick="resetGame()">Relancer une Partie</button>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
